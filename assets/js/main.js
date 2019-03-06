@@ -9,7 +9,6 @@ function findCountry() {
             alt = "Flag of ${countries[0]['name']}" width="200" >`
             document.querySelector('.countryFlag').innerHTML = flagImgLink;
             infoEle.append(`The country is ${countries[0]['name']}.`)
-
             infoEle.append(`The country is ${countries[0]['name']}.`)
             console.log(countries)
         })

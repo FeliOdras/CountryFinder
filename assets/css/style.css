@@ -90,7 +90,8 @@ footer {
   height: 35px;
   background-color: #111;
   font-size: .7rem;
-  padding: 5px; }
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif; }
   footer .hotpink {
     background-color: hotpink;
     color: #fff;

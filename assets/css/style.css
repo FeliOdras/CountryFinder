@@ -21,3 +21,13 @@ header {
   header h1 {
     font-size: 1.5rem;
     font-weight: normal; }
+
+.countryFinderOutput {
+  padding: 30px 3vw;
+  display: flex;
+  align-self: stretch; }
+  .countryFinderOutput .countryFlag {
+    padding-right: 20px; }
+  .countryFinderOutput .countryInfo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem; }

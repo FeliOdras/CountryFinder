@@ -26,8 +26,22 @@ header {
   padding: 30px 3vw;
   display: flex;
   align-self: stretch; }
+  @media screen and (max-width: 400px) {
+    .countryFinderOutput {
+      flex-direction: column; } }
   .countryFinderOutput .countryFlag {
     padding-right: 20px; }
   .countryFinderOutput .countryInfo {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem; }
+    font-size: 1rem;
+    text-align: center;
+    max-width: 350px; }
+    .countryFinderOutput .countryInfo h2 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.3rem;
+      font-weight: bold;
+      padding-bottom: 15px; }
+      .countryFinderOutput .countryInfo h2 .preHeadline {
+        font-size: .7rem;
+        font-weight: normal;
+        margin-bottom: 2px; }

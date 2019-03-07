@@ -9,17 +9,20 @@
 </head>
 
 <body>
-    <div class="countryFinderInput">
-        <input type="number" class="countryCodeInput" id="countryCodeInput" name="countryCodeInput" value="1">
-        <input type="submit" class="countryCodeSubmit" id="countryCodeSubmit" value="Find country" onclick="findCountry()">
-    </div>
-    <div class="countryFinderOutput">
-        <div class="countryFlag"></div>
-        <div class="countryInfo">
+    <header>
+        <h1>Country Finder</h1>
+        <div class="countryFinderInput">
+            <input type="number" class="countryCodeInput" id="countryCodeInput" name="countryCodeInput" value="49">
+            <input type="submit" class="countryCodeSubmit" id="countryCodeSubmit" value="Find country" onclick="findCountry()">
+        </div>
+    </header>
+    <article class="countryFinderOutput">
+        <section class="countryFlag"></section>
+        <section class="countryInfo">
             <h2 class="countryTitle"></h2>
             <p class="countryData"></p>
-        </div>
-    </div>
+        </section>
+    </article>
 
     <script src="assets/js/main.js"></script>
 </body>

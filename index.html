@@ -14,16 +14,16 @@
         <h1>Country Finder</h1>
         <div class="countryFinderInput">
             <label>Enter country calling code:</label>
-            <input type="number" class="countryCodeInput" id="countryCodeInput" name="countryCodeInput" value="49">
+            <input type="number" class="countryCodeInput" id="countryCodeInput" name="countryCodeInput">
             <input type="submit" class="countryCodeSubmit" id="countryCodeSubmit" value="Find country" onclick="findCountry()">
         </div>
     </header>
     <main>
         <article class="countryFinderOutput">
-            <section class="countryFlag"></section>
+            <section class="countryFlag"><img src="assets/images/globe.png" alt="Countries of the world"></section>
             <section class="countryInfo">
-                <h2 class="countryTitle"></h2>
-                <p class="countryData"></p>
+                <h2 class="countryTitle"> </h2>
+                <p class="countryData">Enter countries calling code in the field above to receive Data</p>
             </section>
         </article>
     </main>

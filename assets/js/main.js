@@ -10,26 +10,24 @@ function findCountry() {
                 : ``}`;
             document.querySelector(".countryFlag").innerHTML = flagImgLink;
 
-            let headline = `${countryCode}`;
+            let headline = `<div class="preHeadline">You have entered the calling code ${countryCode}.</div> ${
+                countries[0].name
+              } (${countries[0].alpha2Code})`;
             document.querySelector(".countryTitle").innerHTML = headline;
-            let subTitle = `
-      The country with the calling code ${countryCode} is ${
-        countries[0].name
-      }.`;
-            document.querySelector(".countrySubTitle").innerHTML = subTitle;
 
             let countryData = `${countries[0].name}'s capital is <strong>${
         countries[0].capital
       }</strong>.<br>
-        About ${countries[0].population} people are currently living in ${
+        About <strong>${countries[0].population}</strong> people are currently living in ${
         countries[0].name
-      }.`;
+      }.<br>
+      ${countries[0].name} is located in ${countries[0].subregion}.`;
             document.querySelector(".countryData").innerHTML = countryData;
-            console.log(countries);
         })
         .catch(error => {
+            document.querySelector('.countryFlag').innerHTML = '<img src="./assets/images/error.png" alt = "An error accured" width="200" >'
             document.querySelector('.countryTitle').innerHTML = '<span class="error">Something went wrong!</span>';
-            document.querySelector('.countrySubTitle').innerHTML = 'The calling code you have entered does not seem to exist. <br>Try another one.'
+            document.querySelector('.countryData').innerHTML = 'The calling code you have entered does not seem to exist. <br>Try another one.';
         });
 }
 findCountry();

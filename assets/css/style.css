@@ -17,10 +17,37 @@ header {
   font-family: 'Raleway', sans-serif;
   color: #eee;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 5px 10px; }
+  @media screen and (max-width: 620px) {
+    header {
+      flex-direction: column;
+      padding: 5px 5%; } }
   header h1 {
     font-size: 1.5rem;
     font-weight: normal; }
+  header .countryFinderInput {
+    font-size: .9rem; }
+    @media screen and (max-width: 620px) {
+      header .countryFinderInput {
+        margin-top: 10px; } }
+    @media screen and (max-width: 620px) {
+      header .countryFinderInput label {
+        display: block; } }
+    header .countryFinderInput input {
+      padding: 5px;
+      font-family: 'Raleway', sans-serif; }
+      @media screen and (max-width: 620px) {
+        header .countryFinderInput input {
+          margin: 3px 0;
+          width: 100%; } }
+      header .countryFinderInput input[type="submit"] {
+        color: #fff;
+        background-color: #000;
+        border: 1px solid #999;
+        font-size: 1.1rem; }
+        header .countryFinderInput input[type="submit"]:hover {
+          background-color: #444; }
 
 .countryFinderOutput {
   padding: 30px 3vw;

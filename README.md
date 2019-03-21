@@ -2,9 +2,11 @@
 
 _App to find countries by country dailing code using restcountries.eu API_
 
-[Live Project >](https://playground.odras.de/CountryFinder/)
-
 ![Preview Image](./assets/images/CountryFinder.png)
+
+---
+#### **[Visit Poject Site &raquo;](https://playground.odras.de/CountryFinder/)**
+---
 
 ## Features
 - Search countries by calling code
